@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>SuperMercado</title>
+
+    <script src="./resources/bootstrap/js/jquery-3.6.0.min.js"></script>
+    <script src="./resources/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./resources/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-container">
+          <!-- <img class="profile-img-card" src="//lh3.googleusercontent.com/-6V8xOA6M7BA/AAAAAAAAAAI/AAAAAAAAAAA/rzlHcD0KYwo/photo.jpg?sz=120" alt="" /> -->
+          <div class="text-center"><i class="fa fa-user" aria-hidden="true" style="font-size: 100px"></i></div>
+          <p id="profile-name" class="profile-name-card"></p>
+          <form class="form-signin">
+              <span id="reauth-email" class="reauth-email"></span>
+              <input type="email" id="inputEmail" class="form-control" placeholder="Usuario" required autofocus>
+              <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+              <button class="btn btn-lg btn-primary btn-block btn-signin" id="btn_submit" type="submit">Iniciar Sesión</button>
+              <button class="btn btn-lg btn-secondary btn-block btn-signin" type="submit">Registrarse</button>
+          </form><!-- /form -->
+        </div><!-- /card-container -->
+    </div><!-- /container -->
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
